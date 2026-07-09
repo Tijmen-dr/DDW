@@ -1,7 +1,10 @@
 body {
   margin: 0;
   background: #2F82F0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Dylanfont';
+  background-image: url(../IMAGES/Dylano_Italiano\ image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -11,11 +14,18 @@ header {
 }
 
 .header {
-  background-color: #1766CE;
+   background:linear-gradient(
+  45deg, #197dff81, #083878dd
+  );
   border-radius: 100px;
   width: 95%;
   height: 84px;
 }
+
+ @font-face {
+    font-family: 'Dylanfont';
+    src: url(../FONTS/ModernTokyoPersonalUse-nAjmV.ttf);
+  }
 
 nav {
   width: 100%;
@@ -39,7 +49,6 @@ nav {
   color: #1766CE;
   text-decoration: none;
   border-radius: 100px;
-  font-weight: 1000;
   font-size: 20px;
    font-style: italic;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -66,15 +75,15 @@ nav {
 .welkom-text {
   color: #1766CE;
   font-size: 30px;
-  font-weight: 1000;
    text-shadow: 2px 3px 4px #0c4795;
+   -webkit-text-stroke: 0.5px #1350a1;
 }
 
 .title-text {
   color: white;
   font-size: 40px;
-  font-weight: 1000;
   text-shadow: 3px 5px 5px #0e56b4;
+  -webkit-text-stroke: 1px #1766CE;
 }
 
 .button-container {
@@ -94,7 +103,6 @@ nav {
   color: #1766CE;
   text-decoration: none;
   border-radius: 100px;
-  font-weight: 1000;
   font-size: 20px;
   border: 2px solid #1766CE;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -110,11 +118,12 @@ nav {
   justify-content: center;
   width: 210px;
   height: 60px;
-  background: #1766CE;
+  background:linear-gradient(
+  45deg, #1766CE, #093267
+  );
   color: #ffffff;
   text-decoration: none;
   border-radius: 100px;
-  font-weight: 1000;
   font-size: 20px;
   border: 2px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
