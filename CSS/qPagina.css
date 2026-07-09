@@ -1,0 +1,120 @@
+body {
+    background: #328BFF;
+    background: linear-gradient(225deg, rgba(50, 139, 255, 1) 0%, rgba(47, 130, 240, 1) 35%, rgb(15, 51, 99) 100%);
+}
+  
+ #header1 {
+     color: rgb(255, 255, 255);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 30px;
+     justify-content: center;
+     display: flex;
+     text-transform: uppercase;
+ }
+  
+ #maker{
+     color: rgb(255, 255, 255);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 30px;
+     justify-content: center;
+     display: flex;
+     text-transform: uppercase;
+     font-size: large;
+ }
+  
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+  
+ .blok {
+     display: flex;
+     flex-direction: column;
+     background: #559fff;
+     padding: 20px;
+     border-radius: 30px;
+     width: 1500px;
+     height: 800px;
+     position: relative;
+     margin: auto;
+     margin-top: 90px;
+     gap: 60px;
+     border: solid black;
+     box-shadow: 4px 4px 4px rgb(58, 58, 58);
+    
+ }
+  
+  
+ button {
+    padding: 20px 50px;
+    border-radius: 40px;
+    color: black;
+    background-color: rgb(239, 239, 239);
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ }
+  
+ p {
+     color: black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 8px;
+ }
+
+ .query {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#image1 {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.content {
+    flex: 1;
+}
+
+.question{
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.option {
+    min-height: 120px;
+}
+
+.option button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.option button:hover {
+    transform: scale(1.03);
+}
