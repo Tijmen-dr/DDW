@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background: #2F82F0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.header {
+  background-color: #1766CE;
+  border-radius: 100px;
+  width: 95%;
+  height: 83px;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 50px;
+  background: white;
+  color: #1766CE;
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: 1000;
+  font-size: 20px;
+   font-style: italic;
+}
+
+.nav-button:hover {
+  background: #dcdcdc;
+}
+
+.right-buttons{
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.hero{
+  text-align: center;
+  justify-content: center;
+  font-style: italic;
+  margin-top: 120px;
+}
+
+.welkom-text {
+  color: #1766CE;
+  font-size: 30px;
+  font-weight: 1000;
+   text-shadow: 2px 3px 4px #0c4795;
+}
+
+.title-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 1000;
+  text-shadow: 3px 5px 5px #0e56b4;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 180px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 60px;
+  background: white;
+  color: #1766CE;
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: 1000;
+  font-size: 20px;
+  border: 2px solid #1766CE;
+}
+
+.contact-button:hover {
+  background: #dcdcdc;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 60px;
+  background: #1766CE;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: 1000;
+  font-size: 20px;
+  border: 2px solid white;
+}
