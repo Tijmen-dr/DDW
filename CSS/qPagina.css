@@ -1,53 +1,115 @@
 body {
     background: #328BFF;
     background: linear-gradient(225deg, rgba(50, 139, 255, 1) 0%, rgba(47, 130, 240, 1) 35%, rgb(15, 51, 99) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
 }
-  
- #header1 {
-     color: rgb(255, 255, 255);
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: 30px;
-     justify-content: center;
-     display: flex;
-     text-transform: uppercase;
- }
-  
- #maker{
-     color: rgb(255, 255, 255);
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: 30px;
-     justify-content: center;
-     display: flex;
-     text-transform: uppercase;
-     font-size: large;
- }
-  
+
+header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.header {
+    width: 95%;
+    height: 84px;
+    border-radius: 100px;
+    background: rgba(20, 80, 180, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    pointer-events: auto;
+}
+
+@font-face {
+    font-family: 'Dylanfont';
+    src: url(../FONTS/ModernTokyoPersonalUse-nAjmV.ttf);
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    background: white;
+    color: #1766CE;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 20px;
+    font-style: italic;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #1766CE;
+}
+
+.nav-button:hover {
+    background: #dcdcdc;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+#header1 {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#maker {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: large;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-  
- .blok {
-     display: flex;
-     flex-direction: column;
-     background: #559fff;
-     padding: 20px;
-     border-radius: 30px;
-     width: 1500px;
-     height: 800px;
-     position: relative;
-     margin: auto;
-     margin-top: 90px;
-     gap: 60px;
-     border: solid black;
-     box-shadow: 4px 4px 4px rgb(58, 58, 58);
-    
- }
-  
-  
- button {
+
+.blok {
+    display: flex;
+    flex-direction: column;
+    background: #559fff;
+    padding: 20px;
+    border-radius: 30px;
+    width: 1500px;
+    height: 785px;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    gap: 60px;
+    border: solid black;
+    box-shadow: 4px 4px 4px rgb(58, 58, 58);
+}
+
+button {
     padding: 20px 50px;
     border-radius: 40px;
     color: black;
@@ -57,21 +119,18 @@ body {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
-    text-transform: uppercase;
     background-repeat: no-repeat;
     background-size: cover;
-    
- }
-  
- p {
-     color: black;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: 8px;
- }
+}
 
- .query {
+p {
+    color: black;
+    font-size: 8px;
+}
+
+.query {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
 
@@ -85,9 +144,8 @@ body {
     flex: 1;
 }
 
-.question{
+.question {
     margin-bottom: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .options {
@@ -108,13 +166,78 @@ body {
     background: white;
     cursor: pointer;
     font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s ease-in-out;
+
+    transition:
+        transform .2s ease,
+        background-color .3s ease,
+        color .3s ease;
 }
 
 .option button:hover {
     transform: scale(1.03);
+}
+
+
+.correct {
+    background: #3dcf61 !important;
+    color: white !important;
+    animation: pop .45s ease;
+}
+
+.wrong {
+    background: #ff4d4d !important;
+    color: white !important;
+    animation: shake .45s ease;
+}
+
+.option button:disabled {
+    cursor: default;
+    opacity: .9;
+}
+
+@keyframes pop {
+
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-8px);
+    }
+
+    40% {
+        transform: translateX(8px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }
