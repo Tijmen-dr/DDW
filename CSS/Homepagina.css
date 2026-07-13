@@ -1,11 +1,19 @@
 body {
   margin: 0;
-  background: #2F82F0;
   font-family: 'Dylanfont';
-  background-image: url(../IMAGES/Dylano_Italiano\ image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
+.background-image {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../IMAGES/Dylano_Italiano image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4px) grayscale(0.3) brightness(0.7);
+}
+
 
 header {
   display: flex;
@@ -19,7 +27,7 @@ header {
   );
   border-radius: 100px;
   width: 95%;
-  height: 84px;
+   min-height: 84px;
 }
 
  @font-face {
@@ -33,10 +41,10 @@ nav {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
   align-items: center;
-
+  list-style: none;
+  margin: 0;
+  padding: 15px 20px;
 }
 
 .nav-button {
@@ -56,14 +64,20 @@ nav {
 }
 
 .nav-button:hover {
-  background: #dcdcdc;
+   background:linear-gradient(
+  45deg, #1766ce37, #09326736
+  );
+  color: #ffffff;
+  border: 2px solid #ffffff;
+
 }
 
-.right-buttons{
+.right-buttons {
+  margin-left: auto;
   display: flex;
-  gap: 10px;
-  margin-right: 20px;
+  gap: 15px;
 }
+
 
 .hero{
   text-align: center;
@@ -109,7 +123,11 @@ nav {
 }
 
 .contact-button:hover {
-  background: #dcdcdc;
+   background:linear-gradient(
+  45deg, #1766ce65, #09326765
+  );
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .about-button {
@@ -127,4 +145,10 @@ nav {
   font-size: 20px;
   border: 2px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-button:hover {
+  background:linear-gradient(
+  45deg, #1766ce65, #09326765
+  );
 }
