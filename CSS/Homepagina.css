@@ -188,21 +188,21 @@ nav {
 }
 
 .content-text h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .content-text p {
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.6;
 }
 
 .content-container {
-  width: 100%;
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 30px;
+  gap: 100px;
 }
 
 .card1 {
@@ -280,34 +280,116 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-   border: 2px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
-.card7 {
-  background: white;
-  width: 300px;
-  height: 300px;
+.wanted {
+   background: linear-gradient(
+    45deg,
+    #197dff81,
+    #083878dd
+  );
+  width: 95%;
+  min-height: 700px;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/20250602_161201.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   border: 2px solid #ffffff;
+  margin: 300px auto 0;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+   border: 1px solid rgba(255,255,255,.2);
 }
 
-.card8 {
+.wanted-title {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 3px 4px #0a3b7b;
+  -webkit-text-stroke: 1px #1350a1;
+  margin-bottom: 40px;
+  max-width: 1400px;
+}
+
+.wanted-title h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
+.wanted-img {
   background: white;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 600px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/image.jpg");
+  background-image: url("../IMAGES/058879AB-7C5C-48E7-95A2-D9E097A728F5.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-   border: 2px solid #ffffff;
+  border: 2px solid #ffffff;
 }
+
+.wanted-container {
+  width: 100%;
+  display: flex;
+  justify-items: right;
+  justify-content: right;
+  align-items: right;
+  
+}
+
+
+.wanted-text {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 3px 4px #0a3b7b;
+  -webkit-text-stroke: 1px #1350a1;
+  margin-bottom: 40px;
+  max-width: 1400px;
+}
+
+.wanted-text h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+
+.wanted-text p {
+   font-size: 25px;
+  line-height: 1.6;
+}
+
+.wanted-text ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    list-style:none;
+    padding:0;
+    margin-top:30px;
+}
+
+.wanted-text li{
+    padding:12px 25px;
+    background-color: white;
+    color: #1766CE;
+    border-radius:100px;
+    font-size:25px;
+    transition:0.2s;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #1766CE;
+    -webkit-text-stroke: 0px #1766CE;
+     text-shadow: none;
+}
+
+.wanted-text li:hover{
+    transform:scale(1.05);
+     background:linear-gradient(
+  45deg, #1766ce37, #09326736
+  );
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+
 
 
 .contact {
@@ -327,17 +409,29 @@ nav {
 }
 
 .contact-text {
-    color: white;
+  color: white;
   text-align: left;
   text-shadow: 2px 3px 4px #0a3b7b;
   -webkit-text-stroke: 1px #1350a1;
   margin-bottom: 40px;
   max-width: 1400px;
-  
+}
+
+.nogvragen-img {
+  background: white;
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url("../IMAGES/IMG_6540-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #ffffff;
 }
 
 .contact-text h2 {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -346,10 +440,6 @@ nav {
   line-height: 1.6;
 }
 
-.contact-text h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
 
 .contact-container {
   width: 100%;
@@ -361,12 +451,11 @@ nav {
 }
 
 .contact-blok {
-  background: white;
+  background: rgba(255, 255, 255, 0.207);
   width: 550px;
   height: 700px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
