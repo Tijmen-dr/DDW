@@ -47,7 +47,7 @@ function showCorrectAnswer() {
 function pasTextAan() {
 
     if (vraag == 1) {
-        document.getElementById("vraagje").innerHTML = "<h1>1. Wat is Dyldap zijn meest bekende voice line</h1>";
+        document.getElementById("vraagje").innerHTML = "<h1>1. Wat is Dyldap zijn meest bekende voice line?</h1>";
 
         document.getElementById("A").innerHTML =
             "<button onclick='fout(this)'><strong>A.</strong> \"Morgen stop ik met uitstellen\"</button>";
@@ -221,7 +221,7 @@ function pasTextAan() {
             "<button class='correct-answer' onclick='goed(this)'><strong>C.</strong>Anne-Dylan</button>";
 
         document.getElementById("D").innerHTML =
-            "<button class='correct-answer' onclick='goed(this)'><strong>D.</strong>Spermacel</button>";
+            "<button class='correct-answer' onclick='goed(this)'><strong>D.</strong>Niet belangrijk. Het bestaat toch niet meer</button>";
 
         document.getElementById("image1").src = "../Images/94D4E4AE-F654-4E16-92A4-3FEFF64C6D6F.png";
     }
@@ -296,18 +296,34 @@ function aantallimit() {
 function eindigQuiz() {
 
     const goedCount = lijst.filter(item => item === "goed").length;
+    const foutCount = lijst.filter(item => item === "fout").length;
 
     document.getElementById("vraagje").innerHTML =
         "<h1>Finish! Bedankt voor het meedoen!</h1>";
 
     document.getElementById("A").innerHTML =
         "<h2><strong>Je hebt " + goedCount + " van de 10 antwoorden goed!</strong></h2>";
+        document.getElementById("A").style.color = "#ffffff";
+        document.getElementById("A").style.textShadow = "3px 5px 5px #0e56b4";
+        document.getElementById("A").style.webkitTextStroke = "1px #1766CE";
 
-    document.getElementById("B").innerHTML = "";
-    document.getElementById("C").innerHTML = "";
-    document.getElementById("D").innerHTML = "";
+    document.getElementById("C").innerHTML = "<h2><strong>Daarvan waren " + foutCount + " van de 10 antwoorden fout...</strong></h2>";
+    document.getElementById("C").style.color = "#ffffff";
+    document.getElementById("C").style.textShadow = "3px 5px 5px #0e56b4";
+    document.getElementById("C").style.webkitTextStroke = "1px #1766CE";
+
+    document.getElementById("B").innerHTML = "<h2><strong>0 tot 5 antwoorden goed <br> Je bent geen goede vriend van Dyldap...</strong></h2>";
+    document.getElementById("B").style.color = "#ffffff";
+    document.getElementById("B").style.textShadow = "3px 5px 5px #0e56b4";
+    document.getElementById("B").style.webkitTextStroke = "1px #1766CE";
+
+    document.getElementById("D").innerHTML = "<h2><strong>6 tot 10 antwoorden goed <br> Je bent een echte Dyldap kenner! <br> Of Dyldap zelf...</strong></h2>";
+    document.getElementById("D").style.color = "#ffffff";
+    document.getElementById("D").style.textShadow = "3px 5px 5px #0e56b4";
+    document.getElementById("D").style.webkitTextStroke = "1px #1766CE";
 
     document.getElementById("image1").src =
         "../Images/IMG_1903-1-1.jpg";
-    document.getElementById("back").innerHTML = "<p></p>"
+    document.getElementById("back").innerHTML = "<h1>Hallotjes</h1>";
+    document.getElementById("back").style.color = "#559fff";
 }

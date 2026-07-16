@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: 'Dylanfont';
@@ -11,7 +7,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../IMAGES/Dylano_Italiano image.png");
+  background-image: url("../IMAGES/Dylan_jobs.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,117 +206,87 @@ nav {
 .content-container {
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
-.card1 {
+.card {
   background: white;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/20251017_133212.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid #ffffff;
-   transition:0.2s;
+  transition:0.2s;
 }
 
-.card1:hover {
+.card:hover {
    transform:scale(1.05);
 }
 
-.card2 {
-  background: white;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/20251025_144042.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   border: 2px solid #ffffff;
-    transition:0.2s;
+#card1 {
+  background-image: url("../Images/IMG_2866-1.jpg");
 }
-
-.card2:hover {
-   transform:scale(1.05);
+#card2 {
+  background-image: url("../Images/IMG_1774.jpg");
 }
-
-.card3 {
-  background: white;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/Dylan\ mog.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   border: 2px solid #ffffff;
-    transition:0.2s;
+#card3 {
+  background-image: url("../Images/IMG_1434.jpg");
 }
-
-.card3:hover {
-   transform:scale(1.05);
+#card4 {
+  background-image: url("../Images/IMG_8262.jpg");
 }
-
-.card4 {
-  background: white;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/IMG_7389.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   border: 2px solid #ffffff;
-    transition:0.2s;
+#card5 {
+  background-image: url("../Images/IMG_8334.jpg");
 }
-
-.card4:hover {
-   transform:scale(1.05);
+#card6 {
+  background-image: url("../Images/IMG_20260105_172938-1.jpg");
 }
-
-.card5 {
-  background: white;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/Screenshot_20240610_220157_Gallery-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   border: 2px solid #ffffff;
-    transition:0.2s;
+#card7 {
+  background-image: url("../Images/IMG_7386.jpg");
 }
-
-.card5:hover {
-   transform:scale(1.05);
+#card8 {
+  background-image: url("../Images/IMG_7308.png");
 }
-
-.card6 {
-  background: white;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/Screenshot\ 2026-07-03\ 204655.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #ffffff;
-   transition:0.2s;
+#card9 {
+  background-image: url("../Images/IMG_2196.png");
 }
-
-.card6:hover {
-   transform:scale(1.05);
+#card10 {
+  background-image: url("../Images/IMG_7550.jpg");
+}
+#card11 {
+  background-image: url("../Images/Dylan_finger.jpg");
+}
+#card12 {
+  background-image: url("../Images/IMG_6239.jpg");
+}
+#card13 {
+  background-image: url("../Images/IMG_7966.jpg");
+}
+#card14 {
+  background-image: url("../Images/IMG_2395.jpg");
+}
+#card15 {
+  background-image: url("../Images/IMG_3090-1.jpg");
+}
+#card16 {
+  background-image: url("../Images/Screenshot_2025-12-12_at_11.43.56_AM.png");
+}
+#card17 {
+  background-image: url("../Images/IMG_2197.png");
+}
+#card18 {
+  background-image: url("../Images/IMG_2593-1.jpg");
+}
+#card19 {
+  background-image: url("../Images/20251017_133212.jpg");
+}
+#card20 {
+  background-image: url("../Images/IMG_3096-1.jpg");
 }
 
 .wanted {
@@ -334,6 +300,7 @@ nav {
   border-radius: 20px;
   margin: 300px auto 0;
   padding: 40px;
+  margin-bottom: -300px;
   box-sizing: border-box;
   display: flex;
    border: 1px solid rgba(255,255,255,.2);
@@ -360,16 +327,11 @@ nav {
   height: 600px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/058879AB-7C5C-48E7-95A2-D9E097A728F5.png");
+  background-image: url("../IMAGES/20240408_195059-1.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   border: 2px solid #ffffff;
-   transition:0.2s;
-}
-
-.wanted-img:hover {
-   transform:scale(1.05);
 }
 
 .wanted-container {
@@ -433,169 +395,6 @@ nav {
   color: #ffffff;
   border: 2px solid #ffffff;
 }
-
-
-
-
-.contact {
-   background: linear-gradient(
-    45deg,
-    #197dff81,
-    #083878dd
-  );
-  width: 95%;
-  min-height: 700px;
-  border-radius: 20px;
-  margin: 300px auto 0;
-  padding: 40px;
-  box-sizing: border-box;
-  display: flex;
-   border: 1px solid rgba(255,255,255,.2);
-}
-
-.contact-text {
-  color: white;
-  text-align: left;
-  text-shadow: 2px 3px 4px #0a3b7b;
-  -webkit-text-stroke: 1px #1350a1;
-  margin-bottom: 40px;
-  max-width: 1400px;
-}
-
-.nogvragen-img {
-  background: white;
-  width: 400px;
-  height: 350px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: url("../IMAGES/IMG_6540-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #ffffff;
-   transition:0.2s;
-}
-
-.nogvragen-img:hover {
-   transform:scale(1.05);
-}
-
-.contact-text h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.contact-text p {
-   font-size: 25px;
-  line-height: 1.6;
-}
-
-
-.contact-container {
-  width: 100%;
-  display: flex;
-  justify-items: right;
-  justify-content: right;
-  align-items: right;
-  
-}
-
-.contact-blok {
-  background: rgba(255, 255, 255, 0.207);
-  width: 550px;
-  height: 700px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid #ffffff;
-}
-
-.contact-title {
-  color: white;
-  text-align: center;
-  text-shadow: 2px 3px 4px #0a3b7b;
-  -webkit-text-stroke: 1px #1350a1;
-  margin-bottom: 40px;
-  max-width: 1400px;
-  font-size: 30px;
-}
-
-form {
-  display: grid;
-  justify-content: left;
-  position: relative;
-  margin-left: 15%;
-}
-
-.form-text {
-   color: white;
-  text-shadow: 2px 3px 4px #0a3b7b;
-  -webkit-text-stroke: 1px #1350a1;
-  font-size: 20px;
-  margin-bottom: -15px;
-}
-
-
-input[type=text] {
-  width: 80%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-input[type=email] {
-  width: 80%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-input[type=number] {
-  width: 80%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-input[type=text] {
-  width: 80%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-/* .bottom-hr {
-  position: relative;
-  margin-top: 10%;
-} */
-
-
 
 footer {
     background: linear-gradient(
