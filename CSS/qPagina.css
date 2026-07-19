@@ -114,7 +114,9 @@ nav {
 .blok {
     display: flex;
     flex-direction: column;
-    background: rgba(85, 159, 255, 0.5);
+    background:linear-gradient(
+  45deg, #1761c2dd, #2e89ff81
+  );
     padding: 20px;
     border-radius: 30px;
     width: 1500px;
@@ -123,8 +125,7 @@ nav {
     margin: auto;
     margin-top: 90px;
     gap: 60px;
-    border: solid black;
-    box-shadow: 4px 4px 4px rgb(58, 58, 58);
+    border: 1px solid rgba(255,255,255,.2);
 }
 
 button {
@@ -156,6 +157,7 @@ p {
     width: 30%;
     height: auto;
     border-radius: 15px;
+    border: 5px solid #ffffff;
 }
 
 .content {

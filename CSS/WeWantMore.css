@@ -7,7 +7,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../IMAGES/Dylan_jobs.png");
+  background-image: url("../IMAGES/imageT.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,7 +190,20 @@ nav {
   text-shadow: 2px 3px 4px #0a3b7b;
   -webkit-text-stroke: 1px #1350a1;
   margin-bottom: 40px;
-  max-width: 1400px;
+    background: linear-gradient(
+    45deg,
+    #197dff81,
+    #083878dd
+  );
+  width: 95%;
+  border-radius: 20px;
+  margin: 400px auto 0;
+  margin-bottom: -350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   border: 1px solid rgba(255,255,255,.2);
 }
 
 .content-text h2 {
@@ -221,7 +234,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid #ffffff;
-  transition:0.2s;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {

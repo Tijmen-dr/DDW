@@ -113,7 +113,7 @@ function pasTextAan() {
             "<button onclick='fout(this)'><strong>C.</strong> 61% aanwezig</button>";
 
         document.getElementById("D").innerHTML =
-            "<button class='correct-answer' onclick='goed(this)'><strong>D.</strong> 58% aanwezig</button>";
+            "<button class='correct-answer' onclick='goed(this)'><strong>D.</strong> 57% aanwezig</button>";
 
         document.getElementById("image1").src = "../Images/058879AB-7C5C-48E7-95A2-D9E097A728F5.png";
     }
