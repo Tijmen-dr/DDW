@@ -663,3 +663,398 @@ footer {
   font-size: 20px;
   display: flex;
 }
+
+
+/* Ai code */
+
+/* ==========================
+   TABLET / iPad (max-width: 1024px)
+========================== */
+@media (max-width: 1024px) {
+
+  /* --- Navbar --- */
+  .header {
+    width: 92%;
+    min-height: 70px;
+  }
+
+  .nav-list {
+    padding: 10px 20px;
+  }
+
+  .nav-button {
+    width: 120px;
+    height: 46px;
+    font-size: 17px;
+  }
+
+  /* --- Hero --- */
+  .title-text {
+    font-size: 34px;
+  }
+
+  .welkom-text {
+    font-size: 26px;
+  }
+
+  .button-container {
+    gap: 60px;
+  }
+
+  /* --- Over onze Dylan --- */
+  .textcontent-container {
+    margin-top: 320px;
+    width: 92%;
+  }
+
+  .content {
+    width: 92%;
+    padding: 30px;
+    min-height: auto;
+  }
+
+  .content-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6 {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+  }
+
+  /* --- Gezocht --- */
+  .wanted {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    width: 92%;
+    padding: 30px;
+  }
+
+  .wanted-title {
+    max-width: 100%;
+  }
+
+  .wanted-img {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    background-position: center top;
+    margin: 0 auto;
+  }
+
+  .wanted-container {
+    justify-content: center;
+  }
+
+  /* --- Contact sectie --- */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    width: 92%;
+    padding: 30px;
+  }
+
+  .contact-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .nogvragen-img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .contact-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* --- Contactformulier --- */
+  .contact-blok {
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    width: 100%;
+    padding: 12px 20px 15px 20px;
+  }
+}
+
+
+/* ==========================
+   TELEFOON (max-width: 768px)
+========================== */
+@media (max-width: 768px) {
+
+  /* --- Navbar --- */
+  .header {
+    width: 94%;
+    min-height: 60px;
+    border-radius: 60px;
+  }
+
+  .nav-list {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+
+  .nav-button {
+    width: 95px;
+    height: 40px;
+    font-size: 14px;
+    border-width: 1.5px;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    margin-top: 45px;
+  }
+
+  .title-text {
+    font-size: 26px;
+  }
+
+  .welkom-text {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .contact-button,
+  .about-button {
+    width: 170px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  /* --- Over onze Dylan --- */
+  .textcontent-container {
+    margin-top: 230px;
+    width: 92%;
+    padding: 25px 20px;
+  }
+
+  .content-text h2 {
+    font-size: 24px;
+  }
+
+  .content-text p {
+    font-size: 17px;
+  }
+
+  .content {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .content-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6 {
+    width: 100%;
+    height: 160px;
+  }
+
+  /* --- Gezocht --- */
+  .wanted {
+    margin-top: 120px;
+    width: 92%;
+    padding: 20px;
+  }
+
+  .wanted-title h2 {
+    font-size: 24px;
+  }
+
+  .wanted-img {
+    height: 320px;
+    background-position: center top;
+  }
+
+  .wanted-text h2 {
+    font-size: 22px;
+  }
+
+  .wanted-text p {
+    font-size: 17px;
+  }
+
+  .wanted-text li {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  /* --- Contact sectie --- */
+  .contact {
+    margin-top: 100px;
+    width: 92%;
+    padding: 20px;
+  }
+
+  .contact-text h2 {
+    font-size: 24px;
+  }
+
+  .contact-text p {
+    font-size: 17px;
+  }
+
+  .nogvragen-img {
+    height: 220px;
+  }
+
+  /* --- Contactformulier --- */
+  .contact-blok {
+    width: 80%;
+    max-width: none;
+  }
+
+  form {
+    margin-left: 0;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    width: 100%;
+    padding: 10px 150px 12px 15px;
+    font-size: 15px;
+  }
+
+  .verstuurButton-container {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .verstuurButton {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  footer {
+    top: 40px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+}
+
+
+/* ==========================
+   KLEINE TELEFOON (max-width: 480px)
+========================== */
+@media (max-width: 480px) {
+
+  /* --- Navbar --- */
+  .header {
+    width: 96%;
+    min-height: 55px;
+    border-radius: 50px;
+  }
+
+  .nav-list {
+    padding: 6px 10px;
+    gap: 8px;
+  }
+
+  .nav-button {
+    width: 78px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  /* --- Hero --- */
+  .title-text {
+    font-size: 22px;
+  }
+
+  .welkom-text {
+    font-size: 15px;
+  }
+
+  /* --- Over onze Dylan --- */
+  .textcontent-container {
+    margin-top: 190px;
+  }
+
+  .content-container {
+    gap: 10px;
+  }
+
+  .card1, .card2, .card3, .card4, .card5, .card6 {
+    height: 140px;
+  }
+
+  .content-text h2,
+  .wanted-title h2,
+  .contact-text h2 {
+    font-size: 20px;
+  }
+
+  /* --- Gezocht --- */
+  .wanted-img {
+    height: 260px;
+  }
+
+  /* --- Contact --- */
+  .nogvragen-img {
+    height: 180px;
+  }
+
+  /* --- Contactformulier --- */
+  form {
+    max-width: 280px;
+    padding: 0 15px;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    padding: 10px 12px 12px 12px;
+    font-size: 14px;
+  }
+
+  .verstuurButton {
+    width: 180px;
+    height: 46px;
+    font-size: 15px;
+  }
+}
